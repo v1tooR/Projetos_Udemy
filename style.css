@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Delicious Handrawn', cursive;
+    background-color: black;
+}
+
+.paragraph p{
+    font-size: 50px;
+    color: white;
+    border-right: 4px solid;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitar 2s steps(15),
+    piscar 0.5s infinite step-end alternate;
+}
+span{
+    color: brown;
+}
+@keyframes digitar{
+    from{
+        width: 0;
+    }
+}
+@keyframes piscar{
+    50%{
+        border-color: transparent;
+    }
+}
